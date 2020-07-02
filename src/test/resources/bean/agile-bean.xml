@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container>
+    <beans>
+        <bean id="customService"
+              class="com.agile4j.bean.container.service.CustomService">
+            <property name="accountDao" ref="accountDao"/>
+            <property name="itemDao" ref="itemDao"/>
+            <property name="author" value="lingPai"/>
+        </bean>
+        <bean id="accountDao" class="com.agile4j.bean.container.dao.AccountDao"/>
+        <bean id="itemDao" class="com.agile4j.bean.container.dao.ItemDao"/>
+        <bean id="notSingletonBean"
+              class="com.agile4j.bean.container.component.NotSingletonBean"
+              isSingleton="false"/>
+    </beans>
+</container>

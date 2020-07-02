@@ -1,0 +1,4 @@
+container:
+    auto-scans:
+        -
+            package: com.agile4j.bean.container
